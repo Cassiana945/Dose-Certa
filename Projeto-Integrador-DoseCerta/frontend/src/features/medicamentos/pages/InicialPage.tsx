@@ -1,6 +1,9 @@
 // src/pages/IncialPage.tsx
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import CloseIcon from "@mui/icons-material/Close";
+import IconButton from "@mui/material/IconButton";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Typography,
@@ -22,6 +25,7 @@ import { getUsuarioId } from "@/features/medicamentos/utils/session";
 const IncialPage: React.FC = () => {
   const [medicamentos, setMedicamentos] = useState<MedicamentoDTO[]>([]);
   const usuarioId = getUsuarioId();
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function carregar() {
@@ -51,8 +55,10 @@ const IncialPage: React.FC = () => {
           minHeight: "calc(100vh - 64px)",
         }}
       >
+
         <Card
           sx={{
+            position: "relative",
             background: "rgba(255,255,255,0.5)",
             backdropFilter: "blur(10px)",
             border: "1px solid rgba(0,0,0,0.05)",
@@ -63,6 +69,17 @@ const IncialPage: React.FC = () => {
             boxShadow: "0 8px 30px rgba(0,0,0,0.1)",
           }}
         >
+          <IconButton
+            onClick={() => navigate("/home")}
+            sx={{
+              position: "absolute",
+              top: 16,
+              right: 16,
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+
           <CardContent>
             <Typography
               variant="h4"
