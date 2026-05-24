@@ -11,4 +11,5 @@ import lombok.NoArgsConstructor;
 public class MedicamentoAnvisaDto {
     private Long id;
     private String nomeProduto;
+    private Boolean farmaciaPopular;
 }

@@ -53,7 +53,7 @@ public class MedicamentoAnvisaService {
 
                 String[] colunas = linha.split(";", -1);
 
-                if (colunas.length < 11) continue;
+                if (colunas.length < 12) continue;
 
                 for (int i = 0; i < colunas.length; i++) {
                     colunas[i] = limpar(colunas[i]);
@@ -69,8 +69,8 @@ public class MedicamentoAnvisaService {
                 }
 
                 MedicamentoAnvisa medicamento = new MedicamentoAnvisa(
-                        colunas[0], colunas[1], colunas[2], colunas[3], colunas[4],
-                        colunas[5], colunas[6], colunas[7], colunas[8], colunas[9], colunas[10]
+                        colunas[0], colunas[1], colunas[2], colunas[3], colunas[4], colunas[5],
+                        colunas[6], colunas[7], colunas[8], colunas[9], colunas[10], null
                 );
 
                 listaParaSalvar.add(medicamento);
@@ -106,8 +106,9 @@ public class MedicamentoAnvisaService {
         return repository.findAll();
     }
 
-    // ⭐ NOVO MÉTODO — retorna somente os 20 primeiros registros
     public List<MedicamentoAnvisa> listarPrimeiros20() {
         return repository.findTop20ByOrderByNomeProdutoAsc();
     }
+
+    public boolean buscarFarmaciaPopularPorNome(String nome) { return repository.existsByNomeProdutoContainingIgnoreCaseAndFarmaciaPopularTrue(nome);}
 }

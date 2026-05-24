@@ -23,7 +23,7 @@ export function ModuleGrid() {
       icon: <SportsEsportsIcon sx={{ fontSize: 40 }} />,
       title: 'Jogos Interativos',
       desc: 'Exercícios de memória e atenção.',
-      to: '/grupo2/jogos',
+      to: '/jogos',                   // TODO: endpoint
     },
     {
       icon: <ShoppingCartIcon sx={{ fontSize: 40 }} />,

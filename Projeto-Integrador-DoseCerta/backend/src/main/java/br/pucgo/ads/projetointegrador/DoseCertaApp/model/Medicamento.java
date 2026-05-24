@@ -68,8 +68,7 @@ public class Medicamento {
     @OneToMany(mappedBy = "medicamento", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<MedicamentoHorario> horarios;
 
-    @Column(name = "farmaciaPopular")
-    private String farmaciaPopular;
+
 
     // ===== GETTERS / SETTERS =====
     public Long getId() { return id; }
@@ -120,9 +119,6 @@ public class Medicamento {
     public List<MedicamentoHorario> getHorarios() { return horarios; }
     public void setHorarios(List<MedicamentoHorario> horarios) { this.horarios = horarios; }
 
-    public String getFarmaciaPopular() { return farmaciaPopular;}
-
-    public void setFarmaciaPopular(String farmaciaPopular) { this.farmaciaPopular = farmaciaPopular;}
 
     // ===== CÁLCULO DE DIAS =====
     public int calcularDias() {

@@ -17,7 +17,6 @@ public class CreateMedicamentoRequest {
 
     private List<HorarioDto> horarios;     // lista de horários
 
-    private String farmaciaPopular;        // sim ou não
     @Data
     public static class HorarioDto {
         private String hora;               // formato "HH:mm"

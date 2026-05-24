@@ -88,7 +88,7 @@ public class RegistroTomada {
     public MedicamentoHorario getHorarioMedicamento() { return horarioMedicamento; }
     public void setHorarioMedicamento(MedicamentoHorario horarioMedicamento) { this.horarioMedicamento = horarioMedicamento; }
     // Compatibilidade com código antigo / DTOs que usam "data"
-// Compatibilidade com código antigo / DTOs que usam "data"
+
     public LocalDate getData() {
         return this.dataPrevista;
     }

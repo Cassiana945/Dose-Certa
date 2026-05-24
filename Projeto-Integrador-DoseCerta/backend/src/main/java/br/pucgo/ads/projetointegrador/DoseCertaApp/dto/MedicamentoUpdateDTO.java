@@ -17,7 +17,7 @@ public class MedicamentoUpdateDTO {
     private List<Long> contatosEmergenciaIds;
 
     private List<HorarioDTO> horarios;
-    private String farmaciaPopular;
+
 
     public String getTipoDosagem() {
         return tipoDosagem;
@@ -83,7 +83,5 @@ public class MedicamentoUpdateDTO {
         this.horarios = horarios;
     }
 
-    public String getFarmaciaPopular() { return farmaciaPopular; }
 
-    public void setFarmaciaPopular(String farmaciaPopular) { this.farmaciaPopular = farmaciaPopular; }
 }

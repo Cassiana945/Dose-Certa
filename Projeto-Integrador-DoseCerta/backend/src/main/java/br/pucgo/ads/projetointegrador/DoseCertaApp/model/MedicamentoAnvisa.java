@@ -45,6 +45,9 @@ public class MedicamentoAnvisa {
     @Column(name = "principio_ativo", columnDefinition = "TEXT")
     private String principioAtivo;
 
+    @Column(name = "farmacia_popular", columnDefinition = "BOOLEAN")
+    private Boolean farmaciaPopular;
+
     public MedicamentoAnvisa() {}
 
     public MedicamentoAnvisa(
@@ -58,7 +61,8 @@ public class MedicamentoAnvisa {
             String classeTerapeutica,
             String empresaDetentoraRegistro,
             String situacaoRegistro,
-            String principioAtivo
+            String principioAtivo,
+            Boolean farmaciaPopular
     ) {
         this.tipoProduto = tipoProduto;
         this.nomeProduto = nomeProduto;
@@ -71,6 +75,7 @@ public class MedicamentoAnvisa {
         this.empresaDetentoraRegistro = empresaDetentoraRegistro;
         this.situacaoRegistro = situacaoRegistro;
         this.principioAtivo = principioAtivo;
+        this.farmaciaPopular = farmaciaPopular;
     }
 
     // ========= GETTERS & SETTERS =============
@@ -110,4 +115,6 @@ public class MedicamentoAnvisa {
     public String getPrincipioAtivo() { return principioAtivo; }
     public void setPrincipioAtivo(String principioAtivo) { this.principioAtivo = principioAtivo; }
 
+    public Boolean getFarmaciaPopular() { return farmaciaPopular; }
+    public void setFarmaciaPopular(Boolean farmaciaPopular) { this.farmaciaPopular = farmaciaPopular; }
 }

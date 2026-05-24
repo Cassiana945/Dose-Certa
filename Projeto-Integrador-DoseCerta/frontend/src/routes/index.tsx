@@ -18,6 +18,7 @@ import HistoricoMedicamentosPage from '@/features/medicamentos/pages/HistoricoMe
 import ListaMedicamentosPage from '@/features/medicamentos/pages/ListaMedicamentosPage';
 import IncialPage from '@/features/medicamentos/pages/InicialPage';
 import EditarMedicamentoPage from "@/features/medicamentos/pages/EditarMedicamentoPage";
+import JogosPage from "@/features/jogos/pages/JogosPage.tsx";
 
 
 
@@ -70,6 +71,9 @@ export function AppRoutes() {
           <Route path="listagem" element={<ListaMedicamentosPage />} />
           <Route path="lista" element={<ListaMedicamentosPage />} />
         </Route>
+
+         {/* Rota de Jogos */}
+          <Route path="jogos" element={<JogosPage/>}/>
 
         {/* Rota fallback */}
         <Route path="*" element={<Navigate to="/home" replace />} />

@@ -59,7 +59,16 @@ public class MedicamentoAnvisaController {
             return service.buscarPorPrincipioAtivo(principio);
         }
 
+
         // ⭐ AGORA: SEM FILTRO → RETORNAR TODOS
         return service.listarTodos();
     }
+
+    @GetMapping("/farmacia-popular")
+    public ResponseEntity<Boolean> verificarFarmaciaPopular(@RequestParam String nome){
+        boolean disponivel = service.buscarFarmaciaPopularPorNome(nome);
+        return ResponseEntity.ok(disponivel);
+    }
+
+
 }

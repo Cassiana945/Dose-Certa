@@ -15,6 +15,8 @@ public interface MedicamentoAnvisaRepository extends JpaRepository<MedicamentoAn
 
     boolean existsByNumeroRegistroProduto(String numeroRegistroProduto);
 
-    // ⭐ NOVO MÉTODO — RETORNAR SOMENTE OS 20 PRIMEIROS REGISTROS
     List<MedicamentoAnvisa> findTop20ByOrderByNomeProdutoAsc();
+
+    // Busca por nome do produto E verifica se está na Farmácia Popular
+    boolean existsByNomeProdutoContainingIgnoreCaseAndFarmaciaPopularTrue(String nome);
 }
