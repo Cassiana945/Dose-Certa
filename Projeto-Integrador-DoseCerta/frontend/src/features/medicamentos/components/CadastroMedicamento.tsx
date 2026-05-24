@@ -26,6 +26,8 @@ import { useNavigate } from "react-router-dom";
 import type { Medicamento, TipoMedicamento } from "../types/medicamento";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
+import FarmaciaPopular from "../../../assets/logo_farmacia_popular.png";
+
 import {
     carregarContatosDoUsuario,
     criarContato as apiCriarContato,
@@ -136,6 +138,8 @@ const CadastroMedicamento: React.FC<Props> = ({ medicamentoEditar }) => {
     const [anvisaSelecionada, setAnvisaSelecionada] = useState<MedicamentoAnvisaDto | null>(null);
     const [anvisaInputValue, setAnvisaInputValue] = useState("");
     const [anvisaLoading, setAnvisaLoading] = useState(false);
+    const [farmaciaPopularStatus, setFarmaciaPopularStatus] = useState<boolean | null>(null);
+
 
     useEffect(() => {
         if (anvisaInputValue.trim().length < 3) {
@@ -147,6 +151,7 @@ const CadastroMedicamento: React.FC<Props> = ({ medicamentoEditar }) => {
             try {
                 const resultado = await anvisaApi.listar({ nome: anvisaInputValue.trim() });
                 setMedicamentosAnvisa(resultado);
+
             } catch (err) {
                 console.error("Erro ao buscar medicamentos ANVISA", err);
             } finally {
@@ -155,6 +160,14 @@ const CadastroMedicamento: React.FC<Props> = ({ medicamentoEditar }) => {
         }, 300); // debounce de 300ms
         return () => clearTimeout(timeout);
     }, [anvisaInputValue]);
+
+    useEffect(() => {
+        if (anvisaSelecionada?.nomeProduto) {
+            anvisaApi.isFarmaciaPopular(anvisaSelecionada.nomeProduto)
+                .then(setFarmaciaPopularStatus)
+                .catch(err => console.error(err));
+        }
+    }, [anvisaSelecionada]);
 
     useEffect(() => {
         const load = async () => {
@@ -695,12 +708,44 @@ const CadastroMedicamento: React.FC<Props> = ({ medicamentoEditar }) => {
                                     </Col>
                                 </ResponsiveRow>
 
-                                <Typography variant="body1" color="text.secondary" sx={{ mt: 1, fontSize: 18 }}>
-                                    Duração estimada:{" "}
-                                    <strong style={{ fontSize: 18 }}>
-                                        {diasEstimados > 0 ? `${diasEstimados} dia(s)` : "—"}
-                                    </strong>
-                                </Typography>
+                                <ResponsiveRow gap={2}>
+                                    <Col flex={1}>
+                                        <Typography variant="body1" color="text.secondary" sx={{ mt: 1, fontSize: 18 }}>
+                                            Duração estimada:{" "}
+                                            <strong style={{ fontSize: 18 }}>
+                                                {diasEstimados > 0 ? `${diasEstimados} dia(s)` : "—"}
+                                            </strong>
+                                        </Typography>
+                                    </Col>
+
+
+                                    {farmaciaPopularStatus === true && anvisaSelecionada && (
+                                        <Col flex={1}>
+                                            <Box
+                                                sx={{
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    gap: 1,
+                                                    mt: 1,
+                                                    p: 1,
+                                                    bgcolor: "#e8f5e9",
+                                                    borderRadius: 2,
+                                                    border: "1px solid #4caf50"
+                                                }}
+                                            >
+                                                <img
+                                                    src={FarmaciaPopular}
+                                                    alt="Farmácia Popular"
+                                                    style={{ height: 32, width: 32, objectFit: "contain" }}
+                                                />
+                                                <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 500, color: "#2e7d32" }}>
+                                                    Disponível na Farmácia Popular
+                                                </Typography>
+                                            </Box>
+                                        </Col>
+                                    )}
+                                </ResponsiveRow>
+
 
                                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 2, mt: 1 }}>
                                     <Button

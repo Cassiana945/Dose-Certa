@@ -1,6 +1,6 @@
 // src/api/anvisaApi.ts (ou onde estiver)
 import http from '@/lib/http';
-export interface MedicamentoAnvisaDto { id: number; nomeProduto: string; Boolean: farmaciaPopular}
+export interface MedicamentoAnvisaDto { id: number; nomeProduto: string; boolean: farmaciaPopular}
 
 export const anvisaApi = {
   listar: async (params?: { nome?: string; all?: boolean }) => {
@@ -12,5 +12,13 @@ export const anvisaApi = {
 
   listarTodos: async () => {
     return anvisaApi.listar({ all: true });
-  }
+  },
+
+  isFarmaciaPopular: async (nome: string) => {
+    const { data } = await http.get<boolean>('/medicamentos/anvisa/farmacia-popular', {
+        params: { nome }
+    });
+    return data;
+}
+
 };

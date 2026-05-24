@@ -3,6 +3,7 @@ import http from '@/lib/http';
 export interface MedicamentoAnvisa {
   id: number;
   nomeProduto: string;
+  farmaciaPoupular: boolean;
 }
 
 export const medicamentosApi = {
