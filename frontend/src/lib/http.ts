@@ -1,0 +1,19 @@
+import axios from 'axios';
+
+const http = axios.create({
+  baseURL: 'http://localhost:8080' ,
+  timeout: 1000000,
+});
+
+let token: string | null = null;
+export function setAuthToken(t: string | null) { token = t; }
+
+http.interceptors.request.use((config) => {
+  if (token) {
+    config.headers = config.headers || {};
+    (config.headers as any)['Authorization'] = `Bearer ${token}`;
+  }
+  return config;
+});
+
+export default http;
