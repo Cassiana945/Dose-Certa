@@ -1,4 +1,4 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.sms;
+package br.pucgo.ads.projetointegrador.dosecerta.sms;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

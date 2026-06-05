@@ -1,7 +1,7 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.dto;
+package br.pucgo.ads.projetointegrador.dosecerta.dto;
 
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.TarjaTipo;
+import br.pucgo.ads.projetointegrador.dosecerta.model.TarjaTipo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.NotBlank;

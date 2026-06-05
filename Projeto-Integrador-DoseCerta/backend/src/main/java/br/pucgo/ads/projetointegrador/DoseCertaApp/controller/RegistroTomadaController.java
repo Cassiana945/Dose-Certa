@@ -1,8 +1,8 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.controller;
+package br.pucgo.ads.projetointegrador.dosecerta.controller;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.dto.RegistroTomadaHistoricoDTO;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.RegistroTomada;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.service.RegistroTomadaService;
+import br.pucgo.ads.projetointegrador.dosecerta.dto.RegistroTomadaHistoricoDTO;
+import br.pucgo.ads.projetointegrador.dosecerta.model.RegistroTomada;
+import br.pucgo.ads.projetointegrador.dosecerta.service.RegistroTomadaService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

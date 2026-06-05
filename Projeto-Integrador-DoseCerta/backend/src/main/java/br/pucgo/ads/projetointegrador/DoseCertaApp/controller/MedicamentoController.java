@@ -1,11 +1,11 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.controller;
+package br.pucgo.ads.projetointegrador.dosecerta.controller;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.dto.MedicamentoCreateDTO;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.dto.MedicamentoCriadoDTO;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.dto.MedicamentoResponseDTO;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.dto.MedicamentoUpdateDTO;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.Medicamento;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.service.MedicamentoService;
+import br.pucgo.ads.projetointegrador.dosecerta.dto.MedicamentoCreateDTO;
+import br.pucgo.ads.projetointegrador.dosecerta.dto.MedicamentoCriadoDTO;
+import br.pucgo.ads.projetointegrador.dosecerta.dto.MedicamentoResponseDTO;
+import br.pucgo.ads.projetointegrador.dosecerta.dto.MedicamentoUpdateDTO;
+import br.pucgo.ads.projetointegrador.dosecerta.model.Medicamento;
+import br.pucgo.ads.projetointegrador.dosecerta.service.MedicamentoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

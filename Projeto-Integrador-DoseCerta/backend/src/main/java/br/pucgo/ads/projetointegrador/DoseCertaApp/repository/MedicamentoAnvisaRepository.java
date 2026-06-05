@@ -1,6 +1,6 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.repository;
+package br.pucgo.ads.projetointegrador.dosecerta.repository;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.MedicamentoAnvisa;
+import br.pucgo.ads.projetointegrador.dosecerta.model.MedicamentoAnvisa;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

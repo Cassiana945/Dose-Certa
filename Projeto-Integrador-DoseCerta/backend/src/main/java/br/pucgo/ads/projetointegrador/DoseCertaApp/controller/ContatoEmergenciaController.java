@@ -1,9 +1,9 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.controller;
+package br.pucgo.ads.projetointegrador.dosecerta.controller;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.dto.ContatoEmergenciaDTO;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.dto.ContatoEmergenciaResponseDTO;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.ContatoEmergencia;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.service.ContatoEmergenciaService;
+import br.pucgo.ads.projetointegrador.dosecerta.dto.ContatoEmergenciaDTO;
+import br.pucgo.ads.projetointegrador.dosecerta.dto.ContatoEmergenciaResponseDTO;
+import br.pucgo.ads.projetointegrador.dosecerta.model.ContatoEmergencia;
+import br.pucgo.ads.projetointegrador.dosecerta.service.ContatoEmergenciaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

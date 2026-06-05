@@ -1,6 +1,6 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.dto;
+package br.pucgo.ads.projetointegrador.dosecerta.dto;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.ContatoEmergencia;
+import br.pucgo.ads.projetointegrador.dosecerta.model.ContatoEmergencia;
 
 public class ContatoEmergenciaResponseDTO {
 

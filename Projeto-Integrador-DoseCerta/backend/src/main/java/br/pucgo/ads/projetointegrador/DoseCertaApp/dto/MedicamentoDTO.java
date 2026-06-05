@@ -1,6 +1,6 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.dto;
+package br.pucgo.ads.projetointegrador.dosecerta.dto;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.TarjaTipo;
+import br.pucgo.ads.projetointegrador.dosecerta.model.TarjaTipo;
 import java.util.List;
 
 public class MedicamentoDTO {

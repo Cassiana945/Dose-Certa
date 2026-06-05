@@ -1,4 +1,4 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.model;
+package br.pucgo.ads.projetointegrador.dosecerta.model;
 
 
 import br.pucgo.ads.projetointegrador.plataforma.entity.User;

@@ -1,8 +1,8 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.dto;
+package br.pucgo.ads.projetointegrador.dosecerta.dto;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.Medicamento;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.MedicamentoHorario;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.RegistroTomada;
+import br.pucgo.ads.projetointegrador.dosecerta.model.Medicamento;
+import br.pucgo.ads.projetointegrador.dosecerta.model.MedicamentoHorario;
+import br.pucgo.ads.projetointegrador.dosecerta.model.RegistroTomada;
 
 import java.util.List;
 import java.util.stream.Collectors;

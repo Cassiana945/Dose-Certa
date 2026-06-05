@@ -1,11 +1,11 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.service;
+package br.pucgo.ads.projetointegrador.dosecerta.service;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.Medicamento;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.MedicamentoHorario;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.RegistroTomada;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.repository.MedicamentoHorarioRepository;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.repository.MedicamentoRepository;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.repository.RegistroTomadaRepository;
+import br.pucgo.ads.projetointegrador.dosecerta.model.Medicamento;
+import br.pucgo.ads.projetointegrador.dosecerta.model.MedicamentoHorario;
+import br.pucgo.ads.projetointegrador.dosecerta.model.RegistroTomada;
+import br.pucgo.ads.projetointegrador.dosecerta.repository.MedicamentoHorarioRepository;
+import br.pucgo.ads.projetointegrador.dosecerta.repository.MedicamentoRepository;
+import br.pucgo.ads.projetointegrador.dosecerta.repository.RegistroTomadaRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,8 +1,8 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.service;
+package br.pucgo.ads.projetointegrador.dosecerta.service;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.dto.*;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.*;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.repository.*;
+import br.pucgo.ads.projetointegrador.dosecerta.dto.*;
+import br.pucgo.ads.projetointegrador.dosecerta.model.*;
+import br.pucgo.ads.projetointegrador.dosecerta.repository.*;
 import br.pucgo.ads.projetointegrador.plataforma.entity.User;
 import br.pucgo.ads.projetointegrador.plataforma.repository.UserRepository;
 

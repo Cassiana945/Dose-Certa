@@ -1,6 +1,6 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.repository;
+package br.pucgo.ads.projetointegrador.dosecerta.repository;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.RegistroTomada;
+import br.pucgo.ads.projetointegrador.dosecerta.model.RegistroTomada;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

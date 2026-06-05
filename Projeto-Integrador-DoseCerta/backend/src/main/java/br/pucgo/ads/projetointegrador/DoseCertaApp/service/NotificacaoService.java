@@ -1,4 +1,4 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.service;
+package br.pucgo.ads.projetointegrador.dosecerta.service;
 
 
 import org.springframework.stereotype.Service;

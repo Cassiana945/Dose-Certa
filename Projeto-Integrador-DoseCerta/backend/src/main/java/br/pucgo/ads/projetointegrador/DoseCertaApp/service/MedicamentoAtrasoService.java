@@ -1,9 +1,9 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.service;
+package br.pucgo.ads.projetointegrador.dosecerta.service;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.Medicamento;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.MedicamentoHorario;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.repository.MedicamentoHorarioRepository;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.sms.SmsService;
+import br.pucgo.ads.projetointegrador.dosecerta.model.Medicamento;
+import br.pucgo.ads.projetointegrador.dosecerta.model.MedicamentoHorario;
+import br.pucgo.ads.projetointegrador.dosecerta.repository.MedicamentoHorarioRepository;
+import br.pucgo.ads.projetointegrador.dosecerta.sms.SmsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

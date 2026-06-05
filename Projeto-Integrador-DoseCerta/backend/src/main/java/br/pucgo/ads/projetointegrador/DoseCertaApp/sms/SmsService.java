@@ -1,4 +1,4 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.sms;
+package br.pucgo.ads.projetointegrador.dosecerta.sms;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

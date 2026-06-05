@@ -1,4 +1,4 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.dto;
+package br.pucgo.ads.projetointegrador.dosecerta.dto;
 
 import java.util.List;
 

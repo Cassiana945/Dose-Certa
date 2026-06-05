@@ -1,7 +1,7 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.controller;
+package br.pucgo.ads.projetointegrador.dosecerta.controller;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.MedicamentoAnvisa;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.service.MedicamentoAnvisaService;
+import br.pucgo.ads.projetointegrador.dosecerta.model.MedicamentoAnvisa;
+import br.pucgo.ads.projetointegrador.dosecerta.service.MedicamentoAnvisaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

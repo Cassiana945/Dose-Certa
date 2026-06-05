@@ -1,7 +1,7 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.controller;
+package br.pucgo.ads.projetointegrador.dosecerta.controller;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.MedicamentoHorario;
-import br.pucgo.ads.projetointegrador.DoseCertaApp.service.MedicamentoHorarioService;
+import br.pucgo.ads.projetointegrador.dosecerta.model.MedicamentoHorario;
+import br.pucgo.ads.projetointegrador.dosecerta.service.MedicamentoHorarioService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

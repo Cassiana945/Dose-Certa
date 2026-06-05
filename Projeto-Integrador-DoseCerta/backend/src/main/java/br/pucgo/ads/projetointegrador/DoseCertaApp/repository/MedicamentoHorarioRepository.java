@@ -1,6 +1,6 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.repository;
+package br.pucgo.ads.projetointegrador.dosecerta.repository;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.MedicamentoHorario;
+import br.pucgo.ads.projetointegrador.dosecerta.model.MedicamentoHorario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

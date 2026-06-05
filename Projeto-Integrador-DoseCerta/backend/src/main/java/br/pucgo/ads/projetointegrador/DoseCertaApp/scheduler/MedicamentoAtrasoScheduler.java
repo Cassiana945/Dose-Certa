@@ -1,6 +1,6 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.scheduler;
+package br.pucgo.ads.projetointegrador.dosecerta.scheduler;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.service.MedicamentoAtrasoService;
+import br.pucgo.ads.projetointegrador.dosecerta.service.MedicamentoAtrasoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;

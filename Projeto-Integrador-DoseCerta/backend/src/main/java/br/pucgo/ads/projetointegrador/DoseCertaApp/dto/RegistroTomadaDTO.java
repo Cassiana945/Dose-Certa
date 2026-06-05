@@ -1,6 +1,6 @@
-package br.pucgo.ads.projetointegrador.DoseCertaApp.dto;
+package br.pucgo.ads.projetointegrador.dosecerta.dto;
 
-import br.pucgo.ads.projetointegrador.DoseCertaApp.model.RegistroTomada;
+import br.pucgo.ads.projetointegrador.dosecerta.model.RegistroTomada;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
