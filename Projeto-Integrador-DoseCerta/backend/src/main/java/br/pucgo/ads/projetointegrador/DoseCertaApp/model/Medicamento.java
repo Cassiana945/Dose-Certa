@@ -65,9 +65,6 @@ public class Medicamento {
     @Column(name = "data_fim")
     private LocalDate dataFim;
 
-    @Column(name = "estoque_notificado")
-    private Boolean estoqueNotificado = false;
-
     @OneToMany(mappedBy = "medicamento", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<MedicamentoHorario> horarios;
 
@@ -101,9 +98,6 @@ public class Medicamento {
 
     public String getTipoDosagem() { return tipoDosagem; }
     public void setTipoDosagem(String tipoDosagem) { this.tipoDosagem = tipoDosagem; }
-
-    public Boolean getEstoqueNotificado() { return estoqueNotificado; }
-    public void setEstoqueNotificado(Boolean estoqueNotificado) { this.estoqueNotificado = estoqueNotificado; }
 
     public TarjaTipo getTarja() { return tarja; }
     public void setTarja(TarjaTipo tarja) {
