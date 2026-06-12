@@ -1,6 +1,6 @@
-package br.pucgo.ads.projetointegrador.dosecerta.repository;
+package br.pucgo.ads.projetointegrador.DoseCertaApp.repository;
 
-import br.pucgo.ads.projetointegrador.dosecerta.model.Medicamento;
+import br.pucgo.ads.projetointegrador.DoseCertaApp.model.Medicamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -18,5 +18,9 @@ public interface MedicamentoRepository extends JpaRepository<Medicamento, Long> 
     List<Medicamento> findByUsuarioIdAndMedicamentoAnvisa_NomeProdutoContainingIgnoreCase(
             Long usuarioId, String nomeProduto
     );
+
+    List<Medicamento> findByEstoqueNotificadoFalse();
+    
+
 
 }
