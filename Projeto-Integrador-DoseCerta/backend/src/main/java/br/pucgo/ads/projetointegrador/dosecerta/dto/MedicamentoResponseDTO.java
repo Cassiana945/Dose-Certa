@@ -16,6 +16,8 @@ public class MedicamentoResponseDTO {
     private String tarja;
     private Boolean contatarEmergencia;
 
+    // 🔔 Dias até o medicamento acabar (null = sem informação)
+    private Integer diasRestantes;
 
     private List<MedicamentoHorarioDTO> horarios;
 
